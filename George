@@ -1,0 +1,15 @@
+
+-- LocalScript (For the Alt Account)
+local ChatService = game:GetService("Chat")
+
+-- Function to send a message as the main account
+local function sendMessageToChat(message)
+    -- Replace this with the display name of your main account
+    local mainAccountName = "MainAccount"  -- Change this to your main account's name
+    
+    -- Send the message to chat as the main account
+    ChatService:Chat(game.Players.LocalPlayer.Character.Head, message, Enum.ChatColor.Blue)  -- You can change color if desired
+end
+
+-- Example: Send a message
+sendMessageToChat("Hello, I'm the main account speaking!")
